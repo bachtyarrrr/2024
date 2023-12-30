@@ -3,10 +3,10 @@ import Countdown from "react-countdown";
 import Particles from "react-particles";
 import { Typewriter } from "react-simple-typewriter";
 import { loadFireworksPreset } from "tsparticles-preset-fireworks";
-import ayang from "./video/video.MOV";
+import ayang from "./img/img.JPG";
 
 function App() {
-  const [newYearMessage, setNewYearMessage] = useState(["Nungguin 2024 ya ayang?", "Sambil nonton video ya :D"]);
+  const [newYearMessage, setNewYearMessage] = useState(["Nungguin 2024 ya ayang?", "Lucu kan fotonya :D"]);
 
   const particleInitialization = async (engine) => {
     await loadFireworksPreset(engine);
@@ -26,7 +26,7 @@ function App() {
         options={{ preset: "fireworks" }}
       />
       <div className="flex flex-col justify-center items-center min-h-screen gap-4">
-      <video src={ayang} className="z-50 w-60 rounded-2xl" muted autoplay="true" loop />
+      <img src={ayang} className="z-50 w-60 rounded-2xl" />
         
         <span className="text-white text-2xl font-bold px-4 z-50">
           <Typewriter
