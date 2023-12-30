@@ -3,9 +3,10 @@ import Countdown from "react-countdown";
 import Particles from "react-particles";
 import { Typewriter } from "react-simple-typewriter";
 import { loadFireworksPreset } from "tsparticles-preset-fireworks";
+import ayang from "./video/video.MOV";
 
 function App() {
-  const [newYearMessage, setNewYearMessage] = useState(["Waiting for 2024..."]);
+  const [newYearMessage, setNewYearMessage] = useState(["Lagi Nungguin 2024 yaa ayang? hehehe"]);
 
   const particleInitialization = async (engine) => {
     await loadFireworksPreset(engine);
@@ -25,6 +26,8 @@ function App() {
         options={{ preset: "fireworks" }}
       />
       <div className="flex flex-col justify-center items-center min-h-screen gap-4">
+      <video src={ayang} className="z-50 w-60 rounded-2xl" controls="controls" muted autoplay="true" loop />
+        
         <span className="text-white text-4xl font-bold px-4 z-50">
           <Typewriter
             words={newYearMessage}
@@ -38,11 +41,16 @@ function App() {
             date={Date.now() + timeLeft()}
             onComplete={() =>
               setNewYearMessage([
-                "Selamat Tahun Baru 2024! 🎉🎉 ",
-                "Semoga segala hal terbaik terjadi padamu..",
+                "Selamat Tahun Baru 2024 ayangg! 🎉❤ ",
+                "Semoga segala hal terbaik terjadi pada ayang..",
+                "Semoga dilancarin skripsi nya yaa!!",
+                "Maaf gabisa tahun baruan bareng huhu..."
               ])
             }
           />
+        </div>
+        <div className="z-50 text-white font-bold text-2xl">
+            <h2>Putra</h2>
         </div>
       </div>
     </>
