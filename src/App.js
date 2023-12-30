@@ -6,7 +6,7 @@ import { loadFireworksPreset } from "tsparticles-preset-fireworks";
 import ayang from "./video/video.MOV";
 
 function App() {
-  const [newYearMessage, setNewYearMessage] = useState(["Lagi Nungguin 2024 yaa ayang? hehehe"]);
+  const [newYearMessage, setNewYearMessage] = useState(["Nungguin 2024 ya ayang?", "Sambil nonton video ya :D"]);
 
   const particleInitialization = async (engine) => {
     await loadFireworksPreset(engine);
@@ -26,9 +26,9 @@ function App() {
         options={{ preset: "fireworks" }}
       />
       <div className="flex flex-col justify-center items-center min-h-screen gap-4">
-      <video src={ayang} className="z-50 w-60 rounded-2xl" controls="controls" muted autoplay="true" loop />
+      <video src={ayang} className="z-50 w-60 rounded-2xl" muted autoplay="true" loop />
         
-        <span className="text-white text-4xl font-bold px-4 z-50">
+        <span className="text-white text-2xl font-bold px-4 z-50">
           <Typewriter
             words={newYearMessage}
             loop={false}
