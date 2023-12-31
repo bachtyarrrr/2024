@@ -42,9 +42,9 @@ function App() {
             onComplete={() =>
               setNewYearMessage([
                 "Selamat Tahun Baru 2024 ayangg! 🎉❤ ",
-                "Semoga segala hal terbaik terjadi pada ayang..",
                 "Semoga dilancarin skripsi nya yaa!!",
-                "Maaf gabisa tahun baruan bareng huhu..."
+                "Maaf gabisa tahun baruan bareng huhu...",
+                "I Love U <3",
               ])
             }
           />
