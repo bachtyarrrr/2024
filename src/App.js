@@ -21,14 +21,14 @@ function App() {
 
   return (
     <>
-      <Particles
+      {/* <Particles
         init={particleInitialization}
         options={{ preset: "fireworks" }}
-      />
+      /> */}
       <div className="flex flex-col justify-center items-center min-h-screen gap-4">
       <img src={ayang} className="z-50 w-60 rounded-2xl" />
         
-        <span className="text-white text-2xl font-bold px-4 z-50">
+        <span className="text-black text-xl font-bold px-4 z-50">
           <Typewriter
             words={newYearMessage}
             loop={false}
@@ -36,15 +36,15 @@ function App() {
             cursor
           />
         </span>
-        <div className="z-50 text-white font-bold text-2xl">
+        <div className="z-50 text-black font-bold text-xl">
           <Countdown
             date={Date.now() + timeLeft()}
             onComplete={() =>
               setNewYearMessage([
-                "Selamat Tahun Baru 2024 ayangg! 🎉❤ ",
-                "Semoga dilancarin skripsi nya yaa!!",
-                "Maaf gabisa tahun baruan bareng huhu...",
-                "I Love U <3",
+                "Selamat Tahun Baru 2024 ayang",
+                "Semoga lancar skripsinya yaa",
+                "Maaf gabisa keluar sama ayang",
+                "I Love U ❤",
               ])
             }
           />
